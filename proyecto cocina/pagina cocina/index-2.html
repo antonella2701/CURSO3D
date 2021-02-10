@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Reservaciones</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="booking/css/booking.css">
+<link rel="stylesheet" href="css/stuck.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/script.js"></script> 
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tmStickUp.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+    <script src="booking/js/booking.js"></script>
+
+<script>
+ $(document).ready(function(){
+
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});
+
+  }); 
+</script>
+<!--[if lt IE 9]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+
+
+<![endif]-->
+</head>
+
+<body>
+<!--==============================
+              header
+=================================-->
+<header>
+<!--==============================
+            Stuck menu
+=================================-->
+  <section id="stuck_container">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+        <h1>
+          <a href="index.html">
+            <img src="images/logo.png" alt="Logo alt">
+          </a>
+        </h1>  
+          <div class="navigation ">
+            <nav>
+              <ul class="sf-menu">
+               <li><a href="index.html">home</a></li>
+               <li><a href="index-1.html">menu</a></li>
+               <li class="current"><a href="index-2.html">reservaciones</a></li>
+               <li><a href="index-3.html">bloc</a></li>
+               <li><a href="index-4.html">contacto</a></li>
+             </ul>
+            </nav>        
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+</header>        
+
+<!--=====================
+          Content
+======================-->
+<section class="content"><div class="ic">More Website Templates @ TemplateMonster.com - July 30, 2014!</div>
+  <div class="container">
+    <div class="row">
+      <div class="grid_8">
+        <h2> Reserve su mesa</h2>
+        <img src="images/page3_img1.jpg" alt="" class="img_inner fleft inn__1">
+        <div class="extra_wrapper">
+          <div class="text1 tx__1"><a href="#">La mejor comida</a></div>
+          <p>En el mar tormentoso de Chile vive el rosado congrio,gigante anguila de nevada carne.Y en las ollas chilenas,en la costa,nació el caldillo grávido y suculento,provechoso. </p>
+          <p>Ya sólo es necesario dejar en el manjar caer la crema</p>
+          y a la mesa lleguen recién casados los sabores del mar y de la tierra para que en ese plato tú conozcas el cielo.
+
+        </div>
+        <div class="clear"></div>
+        <h2>  ¿Sabías que?</h2>
+        <div class="text1 tx__1"><a href="#">Sabia que las manzanas pertenecen a la familia de las rosas.</a></div>
+        <p>Sorprendentemente, no solo las manzanas, sino muchas otras frutas, son parientes cercanos de las rosas: todas pertenecen a la familia de las rosáceas. Las peras, las ciruelas, las frambuesas y los damascos son otros ejemplos.</p>
+        <p>Las almendras no son nueces La mayoría de nosotros creemos que las almendras son nueces, pero técnicamente son frutas de cáscara dura que provienen del almendro. Eso las hace estar relacionadas con los melocotones, las cerezas, ciruelas y nectarinas.</p>
+         Una mazorca siempre tiene un número par de granos Una mazorca siempre contiene un número par de filas, normalmente 16, y un promedio de 800 granos. El número de la fila es siempre par, porque las espiguillas del maíz se originan en pares, y cada espiguilla produce dos flósculos: uno fértil y otro estéril. <br>
+        <a href="#" class="btn">mas</a>
+      </div>
+      <div class="grid_4">
+        <h2> Nuestras Horas</h2>
+        <div class="form_title color1">
+         Estamos abiertos los 7 días de la semana, de 8 a.m. a 12 p.m.</div>
+        <form id="bookingForm">
+          <div class="tmInput">
+              <input name="Name" placeHolder="Nombre:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
+          </div>
+        <div class="tmInput">
+          <input name="Email" placeHolder="Email:" type="text" data-constraints="@NotEmpty @Required @Email">
+        </div>     
+         <div class="clear f_sep1"></div>
+          <strong class="dt"> Registrarse</strong>
+         <label class="tmDatepicker">
+          <input type="text" name="Date"  placeHolder='10/05/2014' data-constraints="@NotEmpty @Required @Date">
+        </label>
+        <div class="clear"></div>
+          <strong class="dt"> Revisar</strong>
+        <label class="tmDatepicker">
+          <input type="text" name="Date"  placeHolder='20/05/2014' data-constraints="@NotEmpty @Required @Date">
+        </label>
+        <div class="clear"></div>
+        <div class="fl1 ">
+        <em>Adultos</em>
+        <select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+            <option>1</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        <div class="clear height1"></div>
+       
+        
+        </div>
+        <div class="fl1">
+        <em>Niños</em>
+        <select name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+            <option>0</option>
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+        </select>
+        
+        </div>
+        <div class="clear"></div>
+        
+        <div class="tmTextarea">
+            <textarea name="Mensage" placeHolder="Mensaje:" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
+        </div>
+        <div class="ta__right">
+        <a href="#" class="btn" data-type="reset">borrar</a>
+        <a href="#" class="btn" data-type="submit">enviar</a>
+        </div>
+    </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!--==============================
+              footer
+=================================-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">  
+        <div class="socials">
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-google-plus"></a>
+          <a href="#" class="fa fa-pinterest"></a>
+        </div>
+        <div class="copyright"><span class="brand">Bliss </span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a> <div> Sitio web diseñado Antonella Villasagua </a></div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</footer> 
+  <script>
+  $(function (){
+        $('#bookingForm').bookingForm({
+            ownerEmail: '#'
+        });
+    })
+    $(function() {
+   $('#bookingForm input, #bookingForm textarea').placeholder();
+  });
+    
+  </script>
+</body>
+</html>
+
